@@ -11,7 +11,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
 
 export default function ExamHelper() {
   const [file, setFile] = useState(null);
-  const [fileContent, setFileContent] = useState('');
+  const [ setFileContent] = useState('');
   const [activeTab, setActiveTab] = useState('summary');
   const [isLoading, setIsLoading] = useState(false);
   const [summary, setSummary] = useState('');
