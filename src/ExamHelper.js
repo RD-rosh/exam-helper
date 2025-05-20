@@ -5,7 +5,6 @@ import * as mammoth from 'mammoth';
 import _ from 'lodash';
 import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import './App.css';
-
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js`;
 
 
@@ -506,11 +505,11 @@ export default function ExamHelper() {
       {/* Header */}
       <header className="header">
         <div className="header-inner">
-          <h1 className="header-title">
-            <BookOpen className="icon" />
-            Exam Helper
-          </h1>
-          <p className="header-subtitle">Upload documents to generate summary, questions, and study materials</p>
+          <h1 className="header-title" data-testid="main-title">
+  <BookOpen className="icon" />
+  Exam Helper
+</h1>
+       <p className="header-subtitle">Upload documents to generate summary, questions, and study materials</p>
         </div>
       </header>
 
