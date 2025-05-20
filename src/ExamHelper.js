@@ -3,11 +3,11 @@ import { FileText, BookOpen, HelpCircle, CheckSquare, Upload, Loader, Download, 
 import * as Papa from 'papaparse';
 import * as mammoth from 'mammoth';
 import _ from 'lodash';
-import * as pdfjsLib from 'pdfjs-dist';
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import './App.css';
 
-// Set the PDF.js worker source
-pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js`;
+
 
 export default function ExamHelper() {
   const [file, setFile] = useState(null);
